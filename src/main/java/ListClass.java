@@ -13,5 +13,12 @@ public class ListClass {
         StudentNames.add(2,"Jon");
         StudentNames.add(3,"Suski");
 
+        System.out.println(StudentNames);
+
+    }
+
+
+    public void remove(){
+        StudentNames.remove(2);
     }
 }
