@@ -7,11 +7,8 @@ public class SetClass  {
 
     Set <String> StudentNames = new HashSet<String>(5);
 
-    public void add(){
-        StudentNames.add("Jon");
-        StudentNames.add("Liyabona");
-        StudentNames.add("Saski");
-
+    public void add(String name){
+        StudentNames.add(name);
         System.out.println(StudentNames);
     }
 
@@ -20,9 +17,10 @@ public class SetClass  {
         System.out.println(StudentNames);
     }
 
-    public void find(String object){
+    public String find(String object){
         StudentNames.contains(object);
         System.out.println(StudentNames);
+        return object;
     }
 
 

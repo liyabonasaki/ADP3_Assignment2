@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SetClassTest {
 
     SetClass sc = new SetClass();
+
     @BeforeEach
     void setUp() {
         sc = new SetClass();
@@ -14,14 +15,25 @@ class SetClassTest {
 
     @Test
     void add() {
+        sc.add("Test");
+        sc.add("Test");
 
+        assertNotNull(sc);
+        System.out.println(sc);
     }
 
     @Test
     void remove() {
+        sc.remove("Liyabona");
+        assertNotNull(sc);
+        System.out.println(sc);
+
     }
 
     @Test
     void find() {
+        sc.find("Liyabona");
+        assertNotNull(sc);
+        System.out.println(sc);
     }
 }

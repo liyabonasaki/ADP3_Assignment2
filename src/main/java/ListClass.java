@@ -3,23 +3,32 @@ import java.util.List;
 
 public class ListClass {
     //List
-
-
     List StudentNames = new ArrayList();
 
-    public void add(){
-        StudentNames.add(0,"Amahle");
-        StudentNames.add(1,"Liyabona");
-        StudentNames.add(2,"Jon");
-        StudentNames.add(3,"Suski");
 
-        System.out.println("Adding data" +"\n"+StudentNames);
+    public void add(String object){
+        StudentNames.add(object);
+        System.out.println(StudentNames);
 
     }
 
 
-    public void remove(){
-        StudentNames.remove(2);
-        System.out.println("Removing index 2" +"\n"+StudentNames);
+    public void remove(String object){
+        System.out.println("============= Remove Here -> ==============");
+        StudentNames.remove(object);
+        System.out.println("Removing object.....");
+        System.out.println(StudentNames);
     }
+
+    public String find(String object){
+        System.out.println("============= Search Here -> ==============");
+        if(StudentNames.contains(object)){
+            System.out.println("Searching.....");
+            System.out.println(object);
+        }else{
+            System.out.println("Cant find");
+        }
+        return object;
+    }
+
 }
