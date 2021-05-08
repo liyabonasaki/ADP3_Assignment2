@@ -10,12 +10,14 @@ public class Main {
 
 
         SetClass sc = new SetClass();
-//        sc.add();
-//        sc.remove("Liyabona");
+//        sc.add("Melo");
+//        sc.add("Liyabona");
+//        sc.remove("Melo");
 //        sc.find("Liyabona");
-
-//      MapClass mc = new MapClass();
-//        mc.add();
+//
+       MapClass mc = new MapClass();
+        mc.add(10,"Liyabona");
+        mc.add(11,"Saki");
 
 
     }
