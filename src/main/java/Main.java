@@ -18,6 +18,24 @@ public class Main {
        MapClass mc = new MapClass();
         mc.add(10,"Liyabona");
         mc.add(11,"Saki");
+        mc.add(5,"kusie");
+
+        mc.remove(5);
+
+        mc.find("test");
+
+
+
+        CollectionsClass cc = new CollectionsClass();
+//        cc.add("Liyabona");
+//        cc.add("master");
+//        cc.add("Susie");
+//
+//        cc.remove("Liyabona");
+//
+//        cc.find("test");
+
+
 
 
     }

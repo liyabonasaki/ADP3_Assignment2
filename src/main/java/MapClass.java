@@ -3,35 +3,32 @@ import java.util.Map;
 
 public class MapClass {
 
-    Map studentNames = new HashMap();
+
+    HashMap<Integer, String> studentNames = new HashMap<Integer, String>();
 
     public void add(int index,String value){
-        studentNames.put(0,"Susie");
-        studentNames.put(1,"Liyabona");
-        studentNames.put(2,"Jon");
-        studentNames.put(3,"Memory");
-
+        studentNames.put(index,value);
         System.out.println(studentNames);
 
     }
 
-    public void delete(String object){
+    public void remove(int key){
         System.out.println("============= Remove Here -> ==============");
-        studentNames.remove(object);
+        String returned_value = (String)studentNames.remove(key);
         System.out.println("Removing object.....");
         System.out.println(studentNames);
+
     }
 
     public String find(String value){
         System.out.println("============= Search Here -> ==============");
-        try{
-            studentNames.get(value);
-            System.out.println("Searching.....");
-            System.out.println(value);
 
-        } catch (Exception e){
-            System.out.println("Cannot find");
-        }
+            System.out.println("Searching.....");
+            if(studentNames.containsValue(value)){
+                System.out.println(value);
+            }else{
+                System.out.println("Cant find ");
+            }
         return value;
     }
 

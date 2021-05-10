@@ -14,16 +14,18 @@ class ListClassTest {
     @Test
     void add() {
         lc.add("Liyabona");
+        lc.add("master");
         assertNotNull(lc);
     }
 
 
     @Test
-    String find(String object) {
-        lc.find("Liyabona");
-        lc.find("Liyabona");
+    void find() {
+        lc.add("Liyabona");
+        lc.add("master");
+        lc.find("master");
+        System.out.println(lc);
         assertNotNull(lc);
-        return object;
     }
 
     @Test
@@ -33,6 +35,7 @@ class ListClassTest {
         lc.remove("Buhle");
         if(lc == null){
             System.out.println("List is empty");
+            assertNull(lc);
         }else
         assertNotNull(lc);
     }
