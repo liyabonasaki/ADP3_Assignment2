@@ -7,6 +7,7 @@ public class MapClass {
     HashMap<Integer, String> studentNames = new HashMap<Integer, String>();
 
     public void add(int index,String value){
+        System.out.println("============= Add Here -> ==============");
         studentNames.put(index,value);
         System.out.println(studentNames);
 

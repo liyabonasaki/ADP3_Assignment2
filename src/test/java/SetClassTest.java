@@ -15,8 +15,8 @@ class SetClassTest {
 
     @Test
     void add() {
-        sc.add("Test");
-        sc.add("Test");
+        sc.add("master");
+        sc.add("Liyabona");
 
         assertNotNull(sc);
         System.out.println(sc);
@@ -24,6 +24,8 @@ class SetClassTest {
 
     @Test
     void remove() {
+        sc.add("master");
+        sc.add("Liyabona");
         sc.remove("Liyabona");
         assertNotNull(sc);
         System.out.println(sc);
