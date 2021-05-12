@@ -1,3 +1,10 @@
+/*
+Liyabona Saki
+217120830
+ */
+
+package za.ac.cput.adp3;
+
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.HashSet;
@@ -21,10 +28,13 @@ public class SetClass  {
 
     public String find(String object){
         System.out.println("============= Search Here -> ==============");
-        StudentNames.contains(object);
-        System.out.println(StudentNames);
+        if(StudentNames.contains(object)){
+            System.out.println("Searching.....");
+            System.out.println(object);
+        }else{
+            System.out.println("Cant find");
+        }
         return object;
     }
-
 
 }

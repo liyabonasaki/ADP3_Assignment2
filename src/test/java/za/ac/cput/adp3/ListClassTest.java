@@ -1,10 +1,19 @@
+/*
+Liyabona Saki
+217120830
+ */
+
+package za.ac.cput.adp3;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import za.ac.cput.adp3.ListClass;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ListClassTest {
 
-    ListClass lc = new ListClass();
+    private ListClass lc;
 
     @BeforeEach
     void setUp() {

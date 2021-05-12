@@ -1,11 +1,19 @@
+/*
+Liyabona Saki
+217120830
+ */
+
+package za.ac.cput.adp3;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import za.ac.cput.adp3.CollectionsClass;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CollectionsClassTest {
 
-    CollectionsClass cc = new CollectionsClass();
+    private CollectionsClass cc;
 
     @BeforeEach
     void setUp() {

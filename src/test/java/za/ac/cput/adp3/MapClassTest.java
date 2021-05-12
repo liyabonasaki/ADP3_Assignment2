@@ -1,6 +1,14 @@
+/*
+Liyabona Saki
+217120830
+ */
+
+package za.ac.cput.adp3;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+import za.ac.cput.adp3.MapClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +16,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MapClassTest {
 
-    MapClass mc = new MapClass();
+    private MapClass mc;
+
 
     @BeforeEach
     void setUp() {
